@@ -21,7 +21,7 @@ int main()
     offset = 0;
     while (num < 1024)
     {
-        fp = open("file.txt", O_RDWR + O_CREAT);
+        fp = open("big.txt", O_RDWR + O_CREAT);
         if (fp == -1)
         {
 
@@ -48,12 +48,10 @@ int main()
     offset = 0;
     while (num < 1024)
     {
-        fp = open("file2.txt", O_RDWR + O_CREAT);
+        fp = open("big.txt", O_RDWR + O_CREAT);
         if (fp == -1)
         {
-
             printf("11can not open the file2\n");
-
             return 1;
         }
         // printf("fp:%d\n", fp);

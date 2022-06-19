@@ -1,10 +1,8 @@
-if [ -f "./file.txt" ];then
-rm file.txt
+if [ -f "./big.txt" ];then
+rm big.txt
 fi
-
-if [ -f "./file2.txt" ];then
-rm file2.txt
-fi
+gcc big.c -o big
+./big big.txt 1
 
 gcc random-write.c -o random-write
 ./random-write
